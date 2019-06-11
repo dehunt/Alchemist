@@ -1,0 +1,6 @@
+load "%1" "%2"
+expand all
+filter "-*.epub;-*.epub\"
+criteria timestamp:999999999sec size
+folder-report layout:summary &
+  options:display-mismatches output-to:"%3"
